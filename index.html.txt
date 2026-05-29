@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX AAKASH CAREERS — Your Trusted Pharma Job Portal</title>
+    <meta name="description" content="RX AAKASH CAREERS: India's trusted pharma job portal. Find latest pharmacy, clinical research, pharmacovigilance, regulatory affairs jobs. Apply now!">
+    <meta name="keywords" content="pharma jobs, pharmacy jobs, clinical research jobs, pharmacovigilance jobs, B Pharma jobs, M Pharma jobs, drug inspector jobs, India pharma jobs">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="RX AAKASH CAREERS">
+    <link rel="canonical" href="https://rxaakash.online">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="RX AAKASH CAREERS — Your Trusted Pharma Job Portal">
+    <meta property="og:description" content="Find the best pharma jobs in India. Updated daily.">
+    <meta property="og:url" content="https://rxaakash.online">
+    <meta property="og:type" content="website">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "RX AAKASH CAREERS",
+        "url": "https://rxaakash.online",
+        "description": "Your Trusted Pharma Job Portal"
+    }
+    </script>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0d6b6e;
+            --primary-dark: #094d4f;
+            --accent: #f59e0b;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1);
+            --radius: 12px;
+            --font: 'Inter', sans-serif;
+        }
+        body { font-family: var(--font); background: var(--gray-50); color: var(--gray-900); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+
+        /* TOP BAR */
+        .top-bar { background: var(--gray-900); color: var(--gray-300); padding: 8px 0; font-size: 0.8rem; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+        .top-bar a { color: var(--gray-300); transition: 0.3s; }
+        .top-bar a:hover { color: var(--accent); }
+        .social-links { display: flex; gap: 14px; }
+
+        /* HEADER */
+        .main-header { background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .main-header .container { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+        .logo { display: flex; align-items: center; gap: 10px; }
+        .logo-icon { width: 44px; height: 44px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: white; }
+        .logo-text h1 { font-size: 1.3rem; font-weight: 800; line-height: 1.1; }
+        .logo-text h1 span { color: var(--primary); }
+        .logo-text small { font-size: 0.7rem; color: var(--gray-500); }
+
+        .nav-menu { display: flex; align-items: center; gap: 8px; }
+        .nav-menu a { padding: 8px 16px; border-radius: 8px; font-size: 0.9rem; font-weight: 500; color: var(--gray-600); transition: 0.3s; }
+        .nav-menu a:hover { color: var(--primary); background: #e0f2f1; }
+        .nav-menu .whatsapp-btn { background: #25D366; color: white !important; padding: 8px 18px; border-radius: 50px; display: flex; align-items: center; gap: 6px; font-weight: 600; }
+        .nav-menu .whatsapp-btn:hover { background: #1fa855; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+
+        /* HERO */
+        .hero { background: linear-gradient(135deg, var(--primary-dark), var(--primary), #0f7a7d); color: white; padding: 56px 0 48px; }
+        .hero h2 { font-size: 2.5rem; font-weight: 800; line-height: 1.15; margin-bottom: 12px; }
+        .hero h2 span { color: var(--accent); }
+        .hero p { font-size: 1.1rem; opacity: 0.92; margin-bottom: 24px; max-width: 560px; }
+        .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
+        .hero-stat { text-align: center; }
+        .hero-stat strong { display: block; font-size: 1.8rem; font-weight: 800; }
+        .hero-stat span { font-size: 0.85rem; opacity: 0.8; }
+
+        /* SEARCH */
+        .search-section { margin-top: -28px; position: relative; z-index: 10; }
+        .search-card { background: white; border-radius: 16px; box-shadow: var(--shadow-lg); padding: 24px 28px; }
+        .search-row { display: flex; flex-wrap: wrap; gap: 12px; }
+        .search-row input, .search-row select {
+            flex: 1; min-width: 160px; padding: 12px 16px; border: 2px solid var(--gray-200);
+            border-radius: 8px; font-size: 0.9rem; font-family: var(--font); outline: none;
+        }
+        .search-row input:focus, .search-row select:focus { border-color: var(--primary); }
+        .search-row button {
+            background: var(--accent); color: var(--gray-900); border: none; padding: 12px 32px;
+            border-radius: 8px; font-size: 1rem; font-weight: 700; cursor: pointer; 
+            display: flex; align-items: center; gap: 8px;
+        }
+        .search-row button:hover { background: #d97706; }
+        .filter-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+        .filter-tag {
+            background: var(--gray-100); color: var(--gray-600); padding: 5px 16px;
+            border-radius: 50px; font-size: 0.82rem; font-weight: 500; cursor: pointer;
+            transition: 0.3s; border: 1px solid transparent;
+        }
+        .filter-tag:hover { background: #e0f2f1; color: var(--primary); }
+        .filter-tag.active { background: var(--primary); color: white; }
+
+        /* JOB LISTINGS */
+        .listings-section { padding: 32px 0 48px; }
+        .listings-header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+        .listings-header h3 { font-size: 1.4rem; font-weight: 700; }
+        .listings-header small { color: var(--gray-500); }
+        .sort-select { padding: 8px 14px; border: 2px solid var(--gray-200); border-radius: 8px; font-size: 0.88rem; background: white; cursor: pointer; }
+
+        .jobs-grid { display: flex; flex-direction: column; gap: 16px; }
+        .job-card {
+            background: white; border-radius: 12px; box-shadow: var(--shadow); padding: 24px;
+            cursor: pointer; transition: 0.3s; border-left: 4px solid var(--primary);
+        }
+        .job-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+        .job-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+        .job-card-title { font-size: 1.15rem; font-weight: 700; }
+        .job-card-company { display: flex; align-items: center; gap: 8px; color: var(--gray-600); font-weight: 500; margin: 6px 0; }
+        .company-badge { width: 28px; height: 28px; border-radius: 50%; background: #e0f2f1; display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--primary); font-size: 0.7rem; }
+        .job-meta { display: flex; flex-wrap: wrap; gap: 16px 24px; margin: 10px 0; font-size: 0.88rem; color: var(--gray-500); }
+        .job-meta i { width: 16px; margin-right: 4px; color: var(--primary); }
+        .job-salary { font-weight: 700; color: var(--primary); font-size: 1.05rem; }
+        .job-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+        .job-tag { padding: 3px 12px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; background: var(--gray-100); color: var(--gray-600); }
+        .job-tag.dept { background: #e0f2e9; color: #065f46; }
+        .job-tag.urgent { background: #fef2f2; color: #dc2626; }
+        .job-tag.remote { background: #e0e7ff; color: #4338ca; }
+        .job-tag.new-tag { background: #e0f2fe; color: #0369a1; }
+        .apply-small-btn { background: var(--primary); color: white; border: none; padding: 6px 18px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+        .apply-small-btn:hover { background: var(--primary-dark); }
+        .bookmark-btn { background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--gray-300); padding: 2px; }
+        .bookmark-btn.active { color: var(--accent); }
+        .no-results { text-align: center; padding: 60px 20px; color: var(--gray-500); }
+
+        /* MODAL */
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center; padding: 20px; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: white; border-radius: 16px; max-width: 780px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 36px; position: relative; }
+        .modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: var(--gray-400); }
+        .modal-close:hover { color: red; }
+        .modal h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+        .modal-company-line { color: var(--gray-600); margin-bottom: 16px; }
+        .modal-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding: 20px; background: var(--gray-50); border-radius: 12px; margin: 16px 0; }
+        .modal-info-item label { display: block; font-size: 0.75rem; color: var(--gray-500); text-transform: uppercase; font-weight: 600; }
+        .modal-info-item p { font-weight: 600; margin-top: 2px; }
+        .modal .description { margin: 20px 0; line-height: 1.8; }
+        .requirements-list { padding-left: 20px; margin: 12px 0 20px; line-height: 1.9; }
+        .requirements-list li { list-style: disc; }
+        .apply-now-btn { background: var(--accent); color: var(--gray-900); border: none; padding: 14px; border-radius: 8px; font-size: 1.05rem; font-weight: 700; cursor: pointer; width: 100%; }
+        .apply-now-btn:hover { background: #d97706; }
+        .modal .share-job { display: flex; gap: 10px; margin-top: 16px; justify-content: center; }
+        .modal .share-job a { padding: 8px 14px; border-radius: 50px; font-size: 0.85rem; font-weight: 500; }
+        .share-wa { background: #e8f5e9; color: #1fa855; }
+        .share-li { background: #e8f0fe; color: #0a66c2; }
+
+        /* FOOTER */
+        .site-footer { background: var(--gray-900); color: var(--gray-300); padding: 48px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .footer-about h4 { color: white; font-size: 1.15rem; font-weight: 700; margin-bottom: 12px; }
+        .footer-about p { font-size: 0.9rem; color: var(--gray-400); max-width: 320px; }
+        .footer-social { display: flex; gap: 12px; margin-top: 16px; }
+        .footer-social a { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: var(--gray-400); transition: 0.3s; }
+        .footer-social a:hover { background: var(--primary); color: white; }
+        .footer-col h5 { color: white; font-size: 0.95rem; font-weight: 600; margin-bottom: 14px; }
+        .footer-col ul li { margin-bottom: 8px; }
+        .footer-col ul a { color: var(--gray-400); font-size: 0.88rem; }
+        .footer-col ul a:hover { color: var(--accent); }
+        .footer-bottom { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: var(--gray-500); }
+
+        /* WHATSAPP FLOAT */
+        .whatsapp-float {
+            position: fixed; bottom: 24px; right: 24px; width: 58px; height: 58px;
+            background: #25D366; color: white; border-radius: 50%; display: flex;
+            align-items: center; justify-content: center; font-size: 1.8rem;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4); z-index: 999;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+            100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        .whatsapp-float .tooltip { position: absolute; right: 68px; background: var(--gray-900); color: white; padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; white-space: nowrap; opacity: 0; pointer-events: none; }
+        .whatsapp-float:hover .tooltip { opacity: 1; }
+
+        /* RESPONSIVE */
+        @media (max-width: 968px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: white; padding: 16px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; }
+            .hero h2 { font-size: 1.7rem; }
+            .search-row { flex-direction: column; }
+            .search-row input, .search-row select, .search-row button { width: 100%; }
+            .modal { padding: 24px; }
+            .modal-info-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .hero h2 { font-size: 1.4rem; }
+            .job-card { padding: 16px; }
+            .logo-text h1 { font-size: 1.1rem; }
+            .whatsapp-float { width: 50px; height: 50px; font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div class="container">
+        <span><i class="fas fa-phone-alt"></i> WhatsApp: +91-XXXXXXXXXX &nbsp;|&nbsp; <i class="fas fa-envelope"></i> info@rxaakash.online</span>
+        <div class="social-links">
+            <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="container">
+        <a href="/" class="logo">
+            <div class="logo-icon">💊</div>
+            <div class="logo-text">
+                <h1>RX <span>AAKASH</span> CAREERS</h1>
+                <small>Your Trusted Pharma Job Portal</small>
+            </div>
+        </a>
+        <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="/" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="#jobs"><i class="fas fa-briefcase"></i> Jobs</a>
+            <a href="#"><i class="fas fa-building"></i> Companies</a>
+            <a href="#"><i class="fas fa-newspaper"></i> Blog</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="https://chat.whatsapp.com/YOUR_GROUP_LINK" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Join WhatsApp
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Your <span>Trusted Pharma Job</span> Portal<br>Find Your Dream Career</h2>
+            <p>India's fastest-growing pharma job platform. We connect talented professionals with top pharmaceutical companies. Updated daily with verified vacancies.</p>
+            <div class="hero-stats">
+                <div class="hero-stat"><strong id="liveJobs">280+</strong><span>Live Jobs</span></div>
+                <div class="hero-stat"><strong>55+</strong><span>Companies</span></div>
+                <div class="hero-stat"><strong>1,500+</strong><span>Placed</span></div>
+                <div class="hero-stat"><strong>18K+</strong><span>WhatsApp Members</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEARCH -->
+<section class="search-section">
+    <div class="container">
+        <div class="search-card">
+            <div class="search-row">
+                <input type="text" id="searchInput" placeholder="Search job title, company, keyword...">
+                <select id="locationSelect">
+                    <option value="all">All Locations</option>
+                    <option value="remote">Remote / WFH</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi / NCR</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="pune">Pune</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="india">Anywhere India</option>
+                </select>
+                <select id="deptSelect">
+                    <option value="all">All Departments</option>
+                    <option value="pharmacovigilance">Pharmacovigilance</option>
+                    <option value="clinical">Clinical Research</option>
+                    <option value="regulatory">Regulatory Affairs</option>
+                    <option value="quality">Quality Assurance</option>
+                    <option value="medical">Medical Affairs</option>
+                    <option value="r-d">R&D / Formulation</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="sales">Sales / Marketing</option>
+                    <option value="hospital">Hospital / Retail</option>
+                </select>
+                <button onclick="performSearch()"><i class="fas fa-search"></i> Search Jobs</button>
+            </div>
+            <div class="filter-tags">
+                <span class="filter-tag active" data-filter="all">All Jobs</span>
+                <span class="filter-tag" data-filter="remote">🌍 Remote</span>
+                <span class="filter-tag" data-filter="fresher">🎓 Freshers</span>
+                <span class="filter-tag" data-filter="experienced">📈 Experienced</span>
+                <span class="filter-tag" data-filter="urgent">🔥 Urgent Hiring</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JOB LISTINGS -->
+<section class="listings-section" id="jobs">
+    <div class="container">
+        <div class="listings-header">
+            <div>
+                <h3><i class="fas fa-briefcase" style="color:var(--primary)"></i> Latest Pharma Jobs</h3>
+                <small id="resultCount">Showing jobs...</small>
+            </div>
+            <select class="sort-select" id="sortSelect" onchange="sortJobs(this.value)">
+                <option value="newest">Newest First</option>
+                <option value="salary-high">Highest Salary</option>
+            </select>
+        </div>
+        <div class="jobs-grid" id="jobsContainer"></div>
+    </div>
+</section>
+
+<!-- JOB MODAL -->
+<div class="modal-overlay" id="jobModal">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h2 id="modalTitle">Job Title</h2>
+        <p class="modal-company-line" id="modalCompany">Company • Location</p>
+        <div class="modal-badges" id="modalBadges"></div>
+        <div class="modal-info-grid">
+            <div class="modal-info-item"><label>Salary</label><p id="modalSalary">-</p></div>
+            <div class="modal-info-item"><label>Location</label><p id="modalLocation">-</p></div>
+            <div class="modal-info-item"><label>Qualification</label><p id="modalQualification">-</p></div>
+            <div class="modal-info-item"><label>Experience</label><p id="modalExperience">-</p></div>
+            <div class="modal-info-item"><label>Posted</label><p id="modalPosted">-</p></div>
+            <div class="modal-info-item"><label>Vacancies</label><p id="modalVacancies">-</p></div>
+        </div>
+        <div class="description">
+            <h4>Job Description</h4>
+            <p id="modalDesc">Description here.</p>
+        </div>
+        <h4>Requirements</h4>
+        <ul class="requirements-list" id="modalRequirements"></ul>
+        <a href="#" id="modalApplyLink" target="_blank"><button class="apply-now-btn"><i class="fas fa-paper-plane"></i> Apply Now</button></a>
+        <div class="share-job">
+            <span style="font-size:0.85rem;color:var(--gray-500);display:flex;align-items:center;">Share:</span>
+            <a href="#" class="share-wa" id="shareWA" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="#" class="share-li" id="shareLI" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h4>💊 RX AAKASH CAREERS</h4>
+                <p>Your Trusted Pharma Job Portal. We bridge the gap between talented pharma professionals and leading pharmaceutical companies across India.</p>
+                <div class="footer-social">
+                    <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:info@rxaakash.online"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#jobs">Latest Jobs</a></li>
+                    <li><a href="#">Companies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Job Categories</h5>
+                <ul>
+                    <li><a href="#">Pharmacovigilance Jobs</a></li>
+                    <li><a href="#">Clinical Research Jobs</a></li>
+                    <li><a href="#">Regulatory Affairs Jobs</a></li>
+                    <li><a href="#">Quality Assurance Jobs</a></li>
+                    <li><a href="#">Medical Affairs Jobs</a></li>
+                    <li><a href="#">R&D Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Policies</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 <a href="https://rxaakash.online">RX AAKASH CAREERS</a>. All Rights Reserved.</span>
+            <span>Built with <i class="fas fa-heart" style="color:var(--accent)"></i> for Pharma Professionals</span>
+        </div>
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://chat.whatsapp.com/YOUR_GROUP_LINK" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">Join WhatsApp Group</span>
+</a>
+
+<script>
+// ============================================
+// JOB DATA - EDIT THIS ARRAY TO ADD/EDIT JOBS
+// ============================================
+const allJobs = [
+    {
+        id: 1,
+        title: "Senior Pharmacovigilance Specialist",
+        company: "Pfizer India",
+        location: "Mumbai, Maharashtra",
+        salary: "₹8,00,000 - ₹12,00,000 / year",
+        type: "Full-Time",
+        level: "Senior",
+        dept: "Pharmacovigilance",
+        qualification: "B.Pharm / M.Pharm / PharmD",
+        experience: "3-5 years",
+        posted: "2 days ago",
+        remote: false,
+        urgent: true,
+        vacancies: 2,
+        tags: ["PV", "Drug Safety", "ICSR"],
+        description: "Looking for a Senior PV Specialist to join our global safety team. Responsible for case processing, signal detection, and aggregate reporting.",
+        requirements: [
+            "B.Pharm, M.Pharm, or PharmD",
+            "3+ years of pharmacovigilance experience",
+            "Experience with Argus or ARISg database",
+            "Knowledge of GVP modules",
+            "Excellent communication skills"
+        ],
+        applyLink: "https://rxaakash.online/apply/pfizer-pv"
+    },
+    {
+        id: 2,
+        title: "Clinical Research Associate (CRA)",
+        company: "IQVIA India",
+        location: "Bangalore, Karnataka",
+        salary: "₹6,00,000 - ₹9,00,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "Clinical Research",
+        qualification: "B.Pharm / M.Sc. Life Sciences",
+        experience: "2-4 years",
+        posted: "1 day ago",
+        remote: false,
+        urgent: false,
+        vacancies: 3,
+        tags: ["CRA", "Site Monitoring", "ICH-GCP"],
+        description: "Conduct site monitoring for Phase I-III clinical trials. Ensure protocol compliance and data integrity.",
+        requirements: [
+            "B.Pharm or M.Sc. Life Sciences",
+            "2+ years clinical monitoring experience",
+            "ICH-GCP certified",
+            "Travel 60-80% of time",
+            "Strong documentation skills"
+        ],
+        applyLink: "https://rxaakash.online/apply/iqvia-cra"
+    },
+    {
+        id: 3,
+        title: "Regulatory Affairs Executive",
+        company: "Cipla Ltd.",
+        location: "Mumbai, Maharashtra",
+        salary: "₹5,50,000 - ₹8,00,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "Regulatory Affairs",
+        qualification: "M.Pharm (Pharmaceutics)",
+        experience: "2-3 years",
+        posted: "3 days ago",
+        remote: false,
+        urgent: false,
+        vacancies: 1,
+        tags: ["Regulatory", "DCGI", "Dossier"],
+        description: "Prepare regulatory dossiers for domestic and international submissions. Coordinate with cross-functional teams.",
+        requirements: [
+            "M.Pharm in Pharmaceutics",
+            "2-3 years regulatory affairs experience",
+            "Knowledge of DCGI, USFDA guidelines",
+            "Attention to detail",
+            "Strong analytical skills"
+        ],
+        applyLink: "https://rxaakash.online/apply/cipla-regulatory"
+    },
+    {
+        id: 4,
+        title: "Quality Assurance Officer - GMP",
+        company: "Sun Pharmaceutical",
+        location: "Ahmedabad, Gujarat",
+        salary: "₹4,00,000 - ₹6,50,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "Quality Assurance",
+        qualification: "B.Pharm / M.Pharm",
+        experience: "2-4 years",
+        posted: "5 days ago",
+        remote: false,
+        urgent: false,
+        vacancies: 2,
+        tags: ["QA", "GMP", "Auditing"],
+        description: "Ensure GMP compliance across manufacturing. Conduct internal audits and manage CAPA.",
+        requirements: [
+            "B.Pharm or M.Pharm",
+            "2-4 years QA experience",
+            "Knowledge of WHO-GMP, Schedule M",
+            "Certified internal auditor preferred"
+        ],
+        applyLink: "https://rxaakash.online/apply/sun-pharma-qa"
+    },
+    {
+        id: 5,
+        title: "Medical Science Liaison - Oncology",
+        company: "Roche India",
+        location: "Mumbai, Maharashtra",
+        salary: "₹18,00,000 - ₹25,00,000 / year",
+        type: "Full-Time",
+        level: "Senior",
+        dept: "Medical Affairs",
+        qualification: "MBBS / MD / PharmD / PhD",
+        experience: "3-6 years",
+        posted: "1 week ago",
+        remote: false,
+        urgent: false,
+        vacancies: 1,
+        tags: ["MSL", "Oncology", "KOL"],
+        description: "Scientific liaison between Roche and KOLs in oncology. Deliver presentations and support clinical development.",
+        requirements: [
+            "MBBS, MD, PharmD, or PhD",
+            "3+ years MSL experience",
+            "Oncology knowledge",
+            "Excellent presentation skills",
+            "Travel 50% within territory"
+        ],
+        applyLink: "https://rxaakash.online/apply/roche-msl"
+    },
+    {
+        id: 6,
+        title: "Remote Pharmacovigilance Analyst",
+        company: "Syneos Health",
+        location: "Remote (India)",
+        salary: "₹4,50,000 - ₹7,00,000 / year",
+        type: "Full-Time",
+        level: "Entry",
+        dept: "Pharmacovigilance",
+        qualification: "B.Pharm / PharmD / Life Sciences",
+        experience: "0-2 years",
+        posted: "1 day ago",
+        remote: true,
+        urgent: true,
+        vacancies: 5,
+        tags: ["PV", "Case Processing", "Remote", "Fresher"],
+        description: "Process adverse event reports. Fully remote with training for freshers.",
+        requirements: [
+            "B.Pharm, PharmD, or Life Sciences",
+            "0-2 years experience (freshers welcome)",
+            "Detail-oriented",
+            "Reliable internet connection"
+        ],
+        applyLink: "https://rxaakash.online/apply/syneos-pv"
+    },
+    {
+        id: 7,
+        title: "Formulation Scientist - Oral Dosage",
+        company: "Dr. Reddy's Laboratories",
+        location: "Hyderabad, Telangana",
+        salary: "₹7,00,000 - ₹11,00,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "R&D",
+        qualification: "M.Pharm / PhD (Pharmaceutics)",
+        experience: "3-5 years",
+        posted: "4 days ago",
+        remote: false,
+        urgent: false,
+        vacancies: 2,
+        tags: ["Formulation", "R&D", "QbD"],
+        description: "Develop oral solid dosage formulations. Conduct pre-formulation studies and scale-up.",
+        requirements: [
+            "M.Pharm or PhD in Pharmaceutics",
+            "3-5 years formulation experience",
+            "Knowledge of QbD principles",
+            "ANDA filing experience preferred"
+        ],
+        applyLink: "https://rxaakash.online/apply/dr-reddys-formulation"
+    },
+    {
+        id: 8,
+        title: "Business Development Manager",
+        company: "Zydus Lifesciences",
+        location: "Ahmedabad, Gujarat",
+        salary: "₹10,00,000 - ₹15,00,000 / year",
+        type: "Full-Time",
+        level: "Senior",
+        dept: "Sales / Marketing",
+        qualification: "B.Pharm / MBA",
+        experience: "5-8 years",
+        posted: "6 days ago",
+        remote: false,
+        urgent: false,
+        vacancies: 1,
+        tags: ["BD", "Sales", "Marketing"],
+        description: "Drive business development for domestic and international markets.",
+        requirements: [
+            "B.Pharm + MBA preferred",
+            "5+ years pharma BD experience",
+            "Strong industry network",
+            "Excellent negotiation skills"
+        ],
+        applyLink: "https://rxaakash.online/apply/zydus-bd"
+    },
+    {
+        id: 9,
+        title: "Manufacturing Executive - Sterile",
+        company: "Gland Pharma",
+        location: "Hyderabad, Telangana",
+        salary: "₹5,00,000 - ₹8,00,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "Manufacturing",
+        qualification: "B.Pharm / M.Pharm",
+        experience: "2-4 years",
+        posted: "2 days ago",
+        remote: false,
+        urgent: true,
+        vacancies: 3,
+        tags: ["Manufacturing", "Sterile", "GMP"],
+        description: "Manage sterile manufacturing operations. Ensure cGMP compliance.",
+        requirements: [
+            "B.Pharm or M.Pharm",
+            "2-4 years sterile manufacturing",
+            "Knowledge of aseptic techniques",
+            "Regulatory audit experience"
+        ],
+        applyLink: "https://rxaakash.online/apply/gland-manufacturing"
+    },
+    {
+        id: 10,
+        title: "Clinical Data Manager",
+        company: "Novartis India",
+        location: "Hyderabad, Telangana",
+        salary: "₹7,00,000 - ₹10,00,000 / year",
+        type: "Full-Time",
+        level: "Mid-Level",
+        dept: "Clinical Research",
+        qualification: "B.Pharm / M.Sc. Statistics",
+        experience: "3-5 years",
+        posted: "1 week ago",
+        remote: true,
+        urgent: false,
+        vacancies: 2,
+        tags: ["Data Management", "CDM", "SAS"],
+        description: "Manage clinical trial data from start-up to database lock.",
+        requirements: [
+            "B.Pharm or M.Sc. Statistics",
+            "3+ years CDM experience",
+            "EDC systems experience (Rave, Veeva)",
+            "CDISC standards knowledge"
+        ],
+        applyLink: "https://rxaakash.online/apply/novartis-cdm"
+    },
+    {
+        id: 11,
+        title: "Drug Inspector (CDSCO)",
+        company: "Government of India",
+        location: "Multiple Locations",
+        salary: "₹56,100 - ₹1,77,500 / month",
+        type: "Government",
+        level: "Entry",
+        dept: "Regulatory Affairs",
+        qualification: "B.Pharm / M.Pharm (PCI registered)",
+        experience: "0-5 years",
+        posted: "3 days ago",
+        remote: false,
+        urgent: false,
+        vacancies: 50,
+        tags: ["Government", "Drug Inspector", "CDSCO"],
+        description: "Government recruitment for Drug Inspector positions. Ensure drug and cosmetic compliance.",
+        requirements: [
+            "B.Pharm or M.Pharm from recognized university",
+            "Registered with Pharmacy Council of India",
+            "Age: 21-35 years",
+            "Knowledge of D&C Act"
+        ],
+        applyLink: "https://rxaakash.online/apply/cdsco-inspector"
+    },
+    {
+        id: 12,
+        title: "Hospital Pharmacist",
+        company: "Apollo Hospitals",
+        location: "Mumbai, Maharashtra",
+        salary: "₹2,80,000 - ₹4,50,000 / year",
+        type: "Full-Time",
+        level: "Entry",
+        dept: "Hospital / Retail",
+        qualification: "B.Pharm / D.Pharm",
+        experience: "0-2 years",
+        posted: "1 day ago",
+        remote: false,
+        urgent: true,
+        vacancies: 5,
+        tags: ["Hospital", "Pharmacist", "Fresher"],
+        description: "Join hospital pharmacy team. Drug dispensing, patient counseling, inventory management.",
+        requirements: [
+            "B.Pharm or D.Pharm",
+            "Registered with state pharmacy council",
+            "0-2 years experience",
+            "Good communication skills"
+        ],
+        applyLink: "https://rxaakash.online/apply/apollo-pharmacist"
+    }
+];
+
+// ============================================
+// JAVASCRIPT FUNCTIONALITY
+// ============================================
+let currentJobs = [...allJobs];
+let filteredJobs = [...allJobs];
+let currentSort = 'newest';
+
+function escapeHtml(text) {
+    if (!text) return '';
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function renderJobs(jobsArray) {
+    const container = document.getElementById('jobsContainer');
+    const countDisplay = document.getElementById('resultCount');
+    const liveCount = document.getElementById('liveJobs');
+    container.innerHTML = '';
+
+    if (!jobsArray || jobsArray.length === 0) {
+        container.innerHTML = '<div class="no-results"><i class="fas fa-search" style="font-size:3rem;color:var(--gray-300);margin-bottom:12px;"></i><h4>No jobs found</h4><p>Try adjusting your search or filters.</p></div>';
+        countDisplay.textContent = 'Showing 0 jobs';
+        return;
+    }
+
+    const display = jobsArray.slice(0, 20);
+    display.forEach(job => {
+        const initials = job.company.split(' ').map(w => w[0]).join('').slice(0,2);
+        const card = document.createElement('div');
+        card.className = 'job-card';
+        card.innerHTML = `
+            <div class="job-card-header">
+                <div>
+                    <h3 class="job-card-title">${escapeHtml(job.title)}</h3>
+                    <div class="job-card-company">
+                        <div class="company-badge">${initials}</div>
+                        ${escapeHtml(job.company)}
+                    </div>
+                </div>
+                <button class="apply-small-btn" onclick="event.stopPropagation(); openModal(${job.id})">Apply</button>
+            </div>
+            <div class="job-salary">${escapeHtml(job.salary)}</div>
+            <div class="job-meta">
+                <span><i class="fas fa-map-marker-alt"></i> ${escapeHtml(job.location)}</span>
+                <span><i class="fas fa-graduation-cap"></i> ${escapeHtml(job.qualification)}</span>
+                <span><i class="fas fa-briefcase"></i> ${escapeHtml(job.experience)}</span>
+                <span><i class="fas fa-calendar-alt"></i> ${escapeHtml(job.posted)}</span>
+            </div>
+            <div class="job-tags">
+                <span class="job-tag dept">${escapeHtml(job.dept)}</span>
+                ${job.urgent ? '<span class="job-tag urgent">Urgent</span>' : ''}
+                ${job.remote ? '<span class="job-tag remote">Remote</span>' : ''}
+                ${job.level === 'Entry' ? '<span class="job-tag new-tag">Fresher</span>' : ''}
+            </div>
+        `;
+        card.addEventListener('click', () => openModal(job.id));
+        container.appendChild(card);
+    });
+
+    countDisplay.textContent = `Showing ${display.length} of ${jobsArray.length} jobs`;
+    liveCount.textContent = allJobs.length + '+';
+}
+
+function performSearch() {
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    const location = document.getElementById('locationSelect').value;
+    const dept = document.getElementById('deptSelect').value;
+
+    let results = allJobs.filter(job => {
+        const matchQuery = !query ||
+            job.title.toLowerCase().includes(query) ||
+            job.company.toLowerCase().includes(query) ||
+            job.dept.toLowerCase().includes(query) ||
+            job.tags.some(t => t.toLowerCase().includes(query));
+
+        const matchLocation = location === 'all' ||
+            job.location.toLowerCase().includes(location.replace(/-/g, ' '));
+
+        const matchDept = dept === 'all' ||
+            job.dept.toLowerCase().includes(dept.replace(/-/g, ' '));
+
+        return matchQuery && matchLocation && matchDept;
+    });
+
+    const activeFilters = document.querySelectorAll('.filter-tag.active[data-filter]');
+    activeFilters.forEach(tag => {
+        const f = tag.dataset.filter;
+        if (f === 'remote') results = results.filter(j => j.remote);
+        if (f === 'fresher') results = results.filter(j => j.level === 'Entry');
+        if (f === 'experienced') results = results.filter(j => j.level !== 'Entry');
+        if (f === 'urgent') results = results.filter(j => j.urgent);
+    });
+
+    filteredJobs = results;
+    sortJobs(currentSort);
+}
+
+function sortJobs(value) {
+    if (value) currentSort = value;
+    const sorted = [...filteredJobs];
+    if (currentSort === 'salary-high') {
+        sorted.sort((a, b) => {
+            const n = s => parseInt(s.replace(/[₹,\s\/a-z]+/gi, '').split('-')[0]) || 0;
+            return n(b.salary) - n(a.salary);
+        });
+    } else {
+        sorted.sort((a, b) => {
+            const d = p => parseInt(p.match(/\d+/)?.[0] || 99);
+            return d(a.posted) - d(b.posted);
+        });
+    }
+    renderJobs(sorted);
+}
+
+function openModal(id) {
+    const job = allJobs.find(j => j.id === id);
+    if (!job) return;
+
+    document.getElementById('modalTitle').textContent = job.title;
+    document.getElementById('modalCompany').innerHTML = `<i class="fas fa-building" style="color:var(--primary)"></i> ${escapeHtml(job.company)} • ${escapeHtml(job.location)}`;
+    document.getElementById('modalSalary').textContent = job.salary;
+    document.getElementById('modalLocation').textContent = job.location;
+    document.getElementById('modalQualification').textContent = job.qualification;
+    document.getElementById('modalExperience').textContent = job.experience;
+    document.getElementById('modalPosted').textContent = job.posted;
+    document.getElementById('modalVacancies').textContent = job.vacancies;
+    document.getElementById('modalDesc').textContent = job.description<response>
+
+I see the code was cut off mid-JavaScript. Let me provide the remaining JavaScript and the complete continuation:
+
+```html
+    document.getElementById('modalDesc').textContent = job.description;
+
+    const reqsList = document.getElementById('modalRequirements');
+    reqsList.innerHTML = job.requirements.map(r => `<li>${escapeHtml(r)}</li>`).join('');
+
+    const badges = document.getElementById('modalBadges');
+    badges.innerHTML = `
+        <span class="job-tag dept">${escapeHtml(job.dept)}</span>
+        <span class="job-tag new-tag">${escapeHtml(job.type)}</span>
+        <span class="job-tag">${escapeHtml(job.level)}</span>
+    `;
+
+    const applyLink = document.getElementById('modalApplyLink');
+    applyLink.href = job.applyLink + '?ref=rxaakash';
+
+    const shareUrl = 'https://rxaakash.online/job/' + job.id;
+    const shareText = `📢 ${job.title} at ${job.company}\n📍 ${job.location}\n💰 ${job.salary}\n\nApply: ${shareUrl}`;
+    document.getElementById('shareWA').href = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+    document.getElementById('shareLI').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
+
+    document.getElementById('jobModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    document.getElementById('jobModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Event Listeners
+document.getElementById('jobModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+});
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+});
+
+document.querySelectorAll('.filter-tag').forEach(tag => {
+    tag.addEventListener('click', function() {
+        if (this.dataset.filter === 'all') {
+            document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+        } else {
+            document.querySelector('.filter-tag[data-filter="all"]').classList.remove('active');
+            this.classList.toggle('active');
+        }
+        performSearch();
+    });
+});
+
+document.getElementById('menuToggle').addEventListener('click', function() {
+    document.getElementById('navMenu').classList.toggle('open');
+    this.innerHTML = document.getElementById('navMenu').classList.contains('open')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+});
+
+document.getElementById('searchInput').addEventListener('keyup', function(e) {
+    if (e.key === 'Enter') performSearch();
+});
+
+// Initialize
+performSearch();
+</script>
+</body>
+</html>
